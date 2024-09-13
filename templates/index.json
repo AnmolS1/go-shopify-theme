@@ -110,54 +110,27 @@
             "heading_size": "h1"
           }
         },
-        "price_dPTMKP": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_66RW9T": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_hUXbdT": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "buy_buttons_VBdP6K": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
-        },
-        "share_FVdmHF": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
         "text_Ke6QGm",
         "title_VXLPNy",
-        "price_dPTMKP",
-        "variant_picker_66RW9T",
-        "quantity_selector_hUXbdT",
-        "buy_buttons_VBdP6K",
-        "share_FVdmHF"
+        "buy_buttons_VBdP6K"
       ],
       "settings": {
-        "product": "",
+        "product": "mango-protein-drink",
         "color_scheme": "",
         "secondary_background": false,
-        "media_size": "medium",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "media_position": "left",
+        "media_position": "right",
         "image_zoom": "lightbox",
         "hide_variants": false,
         "enable_video_looping": false,

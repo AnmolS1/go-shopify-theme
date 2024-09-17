@@ -10,6 +10,7 @@
 {
   "current": {
     "logo_width": 90,
+    "favicon": "shopify:\/\/shop_images\/temp_logo.jpg",
     "type_header_font": "roboto_n4",
     "heading_scale": 100,
     "type_body_font": "roboto_n4",

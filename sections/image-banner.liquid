@@ -115,7 +115,15 @@
       }}
     </div>
   {%- endif -%}
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+  
+  <div class="banner-content">
+    <p class="banner-content__leading-text">
+      {{ section.settings.leading_text }}
+    </p>
+  </div>
+  
+  {% # generic shopify content, currently unnecessary %}
+  {% comment %} <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient" style="background: transparent">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -163,7 +171,7 @@
         {%- endcase -%}
       {%- endfor -%}
     </div>
-  </div>
+  </div> {% endcomment %}
 </div>
 
 {% schema %}
@@ -175,6 +183,12 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "leading_text",
+      "label": "Leading Text",
+      "default": "Your custom text here"
+    },
     {
       "type": "image_picker",
       "id": "image",

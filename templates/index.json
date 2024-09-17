@@ -15,8 +15,16 @@
         "heading_6ia9Hb": {
           "type": "heading",
           "settings": {
-            "heading": "Protein &",
+            "heading": "Protein drinks the Desi way, your way",
             "heading_size": "h1"
+          }
+        },
+        "caption_QEmP7M": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
           }
         },
         "text_zzrNfa": {
@@ -37,6 +45,7 @@
       },
       "block_order": [
         "heading_6ia9Hb",
+        "caption_QEmP7M",
         "text_zzrNfa",
         "button_PrbH7L"
       ],

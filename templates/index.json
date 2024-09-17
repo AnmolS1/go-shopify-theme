@@ -19,14 +19,6 @@
             "heading_size": "h1"
           }
         },
-        "caption_QEmP7M": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
         "text_zzrNfa": {
           "type": "text",
           "settings": {
@@ -45,7 +37,6 @@
       },
       "block_order": [
         "heading_6ia9Hb",
-        "caption_QEmP7M",
         "text_zzrNfa",
         "button_PrbH7L"
       ],
@@ -64,31 +55,11 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "image_banner_xqGx6T": {
       "type": "image-banner",
-      "blocks": {
-        "heading_c9eaBp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_8ahyyH": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_c9eaBp",
-        "text_8ahyyH"
-      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/background-desktop.webp",
         "image_overlay_opacity": 0,
@@ -115,7 +86,7 @@
         "buy_buttons_VBdP6K": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
         }

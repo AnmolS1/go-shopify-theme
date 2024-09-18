@@ -51,8 +51,6 @@
   endif
 -%}
 
-{% comment %} the following should go back in the banner if needed {% endcomment %}
-{% comment %} banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" {% endcomment %}
 <div
   id="Banner-{{ section.id }}"
   class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
@@ -122,6 +120,29 @@
     <p class="banner-content__leading-text">
       {{ section.settings.leading_text }}
     </p>
+    
+    <div class="banner-content__grid">
+      <div class="grid-item">
+        <img src="https://cdn.shopify.com/s/files/1/0771/0860/9337/files/11_e08990b1-bd97-4640-8cec-97e6f1850120.svg?v=1703580757" class="grid-item__image" alt="Item Image" width=36 height=36 />
+        <p class="grid-item__text">Organic</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://cdn.shopify.com/s/files/1/0771/0860/9337/files/22_70b19864-56e0-401d-9b61-6e221914f172.svg?v=1703580800" class="grid-item__image" alt="Item Image" width=36 height=36 />
+        <p class="grid-item__text">Non-GMO</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://cdn.shopify.com/s/files/1/0771/0860/9337/files/33_16ca2803-52b1-4f30-9373-ebf6dd59b405.svg?v=1703580842" class="grid-item__image" alt="Item Image" width=36 height=36 />
+        <p class="grid-item__text">Shroomy AF</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://cdn.shopify.com/s/files/1/0771/0860/9337/files/44_427e1704-fa6e-432d-aa93-5a008cd9913f.svg?v=1703580874" class="grid-item__image" alt="Item Image" width=36 height=36 />
+        <p class="grid-item__text">Vegan</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://cdn.shopify.com/s/files/1/0771/0860/9337/files/55.svg?v=1703580903" class="grid-item__image" alt="Item Image" width=36 height=36 />
+        <p class="grid-item__text">Gluten Filled</p>
+      </div>
+    </div>
   </div>
   
   {% # generic shopify content, currently unnecessary %}
@@ -190,6 +211,25 @@
       "id": "leading_text",
       "label": "Leading Text",
       "default": "Your custom text here"
+    },
+    {
+      "type": "range",
+      "id": "grid_columns",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Number of grid columns",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Gap between grid items",
+      "default": 20
     },
     {
       "type": "image_picker",
@@ -378,6 +418,29 @@
     }
   ],
   "blocks": [
+    {
+      "type": "grid_item",
+      "name": "Grid Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "grid_image",
+          "label": "Grid Item Image"
+        },
+        {
+          "type": "text",
+          "id": "grid_title",
+          "label": "Grid Item Title",
+          "default": "Grid Item"
+        },
+        {
+          "type": "textarea",
+          "id": "grid_text",
+          "label": "Grid Item Text",
+          "default": "Add your text here"
+        }
+      ]
+    },
     {
       "type": "heading",
       "name": "t:sections.image-banner.blocks.heading.name",

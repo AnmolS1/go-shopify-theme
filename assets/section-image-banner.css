@@ -1,5 +1,5 @@
 .banner-content {
-	max-width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -8,27 +8,28 @@
     align-items: flex-start;
     gap: 50px;
     color: white;
+    z-index: 2;
 }
 
 .banner-content__leading-text {
-	max-width: 250px;
-	font-size: 28px;
-	line-height: 32px;
-	text-align: left;
+    max-width: 250px;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: left;
 }
 
 @media screen and (max-width: 767px) {
-	.banner-content {
-		max-width: 350px;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-	}
-	
-	.banner-content__leading-text {
-		font-size: 24px;
-		line-height: 28px;
-	}
+    .banner-content {
+        max-width: 350px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .banner-content__leading-text {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 
 .banner {

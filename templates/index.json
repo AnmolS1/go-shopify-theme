@@ -9,6 +9,15 @@
 */
 {
   "sections": {
+    "custom_liquid_rjFkbn": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_kgJEiU": {
       "type": "image-with-text",
       "blocks": {
@@ -61,6 +70,7 @@
     }
   },
   "order": [
+    "custom_liquid_rjFkbn",
     "image_with_text_kgJEiU"
   ]
 }

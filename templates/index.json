@@ -45,7 +45,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/temp_logo.jpg",
-        "height": "adapt",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",

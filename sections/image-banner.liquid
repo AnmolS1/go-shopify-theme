@@ -116,7 +116,7 @@
     </div>
   {%- endif -%}
   
-  <div class="banner-content">
+  <div class="banner-content {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <p class="banner-content__leading-text">
       {{ section.settings.leading_text }}
     </p>
@@ -418,29 +418,6 @@
     }
   ],
   "blocks": [
-    {
-      "type": "grid_item",
-      "name": "Grid Item",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "grid_image",
-          "label": "Grid Item Image"
-        },
-        {
-          "type": "text",
-          "id": "grid_title",
-          "label": "Grid Item Title",
-          "default": "Grid Item"
-        },
-        {
-          "type": "textarea",
-          "id": "grid_text",
-          "label": "Grid Item Text",
-          "default": "Add your text here"
-        }
-      ]
-    },
     {
       "type": "heading",
       "name": "t:sections.image-banner.blocks.heading.name",

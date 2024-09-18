@@ -121,22 +121,6 @@
       {{ section.settings.leading_text }}
     </p>
     
-    <div class="custom-grid" style="grid-template-columns: repeat({{ section.settings.grid_columns }}, 1fr); gap: {{ section.settings.grid_gap }}px;">
-      {% for block in section.blocks %}
-        {% if block.type == 'grid_item' %}
-          <div class="grid-item" {{ block.shopify_attributes }}>
-            {% if block.settings.grid_image %}
-              <img src="{{ block.settings.grid_image | image_url: width: 300, height: 300 }}" alt="{{ block.settings.grid_title | escape }}" width=36 height=36>
-            {% endif %}
-            <h3>{{ block.settings.grid_title }}</h3>
-            <p>{{ block.settings.grid_text }}</p>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    
-    
-    {% comment %} 
     <div class="banner-content__grid">
       <div class="grid-item">
         <img src="https://cdn.shopify.com/s/files/1/0771/0860/9337/files/11_e08990b1-bd97-4640-8cec-97e6f1850120.svg?v=1703580757" class="grid-item__image" alt="Item Image" width=36 height=36 />
@@ -159,7 +143,6 @@
         <p class="grid-item__text">Gluten Filled</p>
       </div>
     </div>
-    {% endcomment %}
   </div>
   
   {% # generic shopify content, currently unnecessary %}

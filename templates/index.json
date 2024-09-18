@@ -15,21 +15,21 @@
         "heading_6ia9Hb": {
           "type": "heading",
           "settings": {
-            "heading": "Protein drinks the Desi way, your way",
+            "heading": "Created by us, for us -",
             "heading_size": "h1"
           }
         },
         "text_zzrNfa": {
           "type": "text",
           "settings": {
-            "text": "<p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "text": "<p>Because 'bland' isn't in our vocabulary, and it shouldn't be in our shakes either<\/p>",
             "text_style": "body"
           }
         },
         "button_PrbH7L": {
           "type": "button",
           "settings": {
-            "button_label": "Try It!",
+            "button_label": "Shop Now",
             "button_link": "shopify:\/\/products\/mango-protein-drink",
             "button_style_secondary": false
           }
@@ -44,6 +44,7 @@
 
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/temp_logo.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -62,6 +63,8 @@
       "type": "image-banner",
       "settings": {
         "leading_text": "It's what's on the inside that counts",
+        "grid_columns": 3,
+        "grid_gap": 20,
         "image": "shopify:\/\/shop_images\/background-desktop.webp",
         "image_overlay_opacity": 0,
         "image_height": "adapt",

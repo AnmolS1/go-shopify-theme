@@ -61,6 +61,7 @@
     "image_banner_xqGx6T": {
       "type": "image-banner",
       "settings": {
+        "leading_text": "It's what's on the inside that counts",
         "image": "shopify:\/\/shop_images\/background-desktop.webp",
         "image_overlay_opacity": 0,
         "image_height": "adapt",

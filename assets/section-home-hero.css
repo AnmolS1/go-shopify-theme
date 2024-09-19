@@ -39,12 +39,12 @@ a {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-.hero-video-container {
+.hero-container {
 	width: 100vw;
 	height: 100vh;
 }
 
-.hero-video-container.home {
+.hero-container.home {
 	z-index: 1;
 	background-image: linear-gradient(#000, rgba(255, 255, 255, 0) 51%);
 	position: relative;
@@ -84,8 +84,21 @@ a {
 	display: inline-block;
 }
 
+.hero-background {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('https://cdn.shopify.com/s/files/1/0669/9728/9112/files/desktop_hero_bg.png?v=1726715075');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hero-background.mobile {
+	display: none;
+}
+
 @media screen and (max-width: 767px) {
-	.hero-video-container.home {
+	.hero-container.home {
 		height: 100vh;
 	}
 }

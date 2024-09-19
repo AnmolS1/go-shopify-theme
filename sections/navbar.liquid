@@ -1,0 +1,50 @@
+{{ 'section-navbar.css' | asset_url | stylesheet_tag }}
+
+<div class="nav-container gradient">
+	<a href="/" aria-current="page" class="nav-logo w-inline-block w--current"></a>
+	<a href="#" class="menu-open w-inline-block"></a>
+	<div class="nav-link-container">
+		<a href="/about" class="nav-link">ABOUT</a>
+		<a href="/work" class="nav-link">WORK</a>
+	</div>
+	<div class="nav-link-container">
+		<a href="/client-wins" class="nav-link">CLIENT WINS</a>
+		<a href="/contact" class="nav-link">CONTACT</a>
+	</div>
+</div>
+
+<div class="mobile-menu-container" style="opacity: 0; display: none;">
+	<div class="mobile-menu-links">
+		<a href="/about" class="link-text mobile-menu">ABOUT</a>
+		<a href="/work" class="link-text mobile-menu">WORK</a>
+		<a href="/client-wins" class="link-text mobile-menu">CLIENT WINS</a>
+		<a href="/contact" class="link-text mobile-menu">CONTACT</a>
+	</div>
+	<div class="texture"></div>
+	<div class="nav-container div-block-2 mobile-menu">
+		<a href="/" aria-current="page" class="nav-logo white mobile-menu w-inline-block w--current"></a>
+		<div class="nav-link-container">
+			<a href="/about" class="nav-link white">ABOUT</a>
+			<a href="/work" class="nav-link white">WORK</a>
+		</div>
+		<div class="nav-link-container">
+			<a href="/client-wins" class="nav-link white">CLIENT WINS</a>
+			<a href="/contact" class="nav-link white">CONTACT</a>
+		</div>
+		<a data-w-id="651721cd-3e4a-b712-a800-230dfdb1cc1d" href="#" class="menu-open close w-inline-block"></a>
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "NavBar",
+	"tag": "section",
+	"class": "section",
+	"presets": [
+		{
+			"name": "Navigation Bar",
+			"category": "Custom Sections"
+		}
+	]
+}
+{% endschema %}

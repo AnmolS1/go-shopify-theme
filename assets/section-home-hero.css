@@ -42,12 +42,9 @@ a {
 .hero-container {
 	width: 100vw;
 	height: 100vh;
-}
-
-.hero-container.home {
-	z-index: 1;
 	background-image: linear-gradient(#000, rgba(255, 255, 255, 0) 51%);
 	position: relative;
+	z-index: 1;
 }
 
 .hero-bottom-container {
@@ -96,7 +93,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-	.hero-container.home {
+	.hero-container {
 		height: 100vh;
 	}
 }

@@ -61,44 +61,21 @@ a {
 	padding-left: 2.5vw;
 	padding-right: 2.5vw;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
 	z-index: 100;
 }
 
-.footer-social-links {
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
-
-.social-link {
-	color: white;
-	padding-left: 0.8rem;
-	padding-right: 0.8rem;
-	font-family: "Fa brands 400", sans-serif;
-	font-size: 20px;
-	text-decoration: none;
-}
-
-.social-link:hover, .social-link.header {
-	color: #c5ae94;
-}
-
 .scroll-down-container {
+	max-width: 100%;
 	width: 3.4rem;
 	height: 3.4rem;
 	border: 2px solid #c5ae94;
 	border-radius: 20px;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	display: flex;
-}
-
-.w-inline-block {
-	max-width: 100%;
-	display: inline-block;
 }
 
 .scroll-down-container > img {
@@ -110,19 +87,5 @@ a {
 @media screen and (max-width: 767px) {
 	.hero-video-container.home {
 		height: 100vh;
-	}
-	
-	.hero-bottom-container {
-		justify-content: center;
-	}
-	
-	.footer-social-links {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		display: flex;
-	}
-	
-	.footer-social-links.mobile-hide {
-		display: none;
 	}
 }

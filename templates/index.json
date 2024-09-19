@@ -9,13 +9,9 @@
 */
 {
   "sections": {
-    "custom_liquid_rjFkbn": {
-      "type": "custom-liquid",
+    "home_hero_NdQA3X": {
+      "type": "home-hero",
       "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "image_with_text_kgJEiU": {
@@ -71,7 +67,7 @@
     }
   },
   "order": [
-    "custom_liquid_rjFkbn",
+    "home_hero_NdQA3X",
     "image_with_text_kgJEiU"
   ]
 }

@@ -95,20 +95,8 @@ a {
 	overflow: hidden;
 }
 
-/* .hero-background.mobile {
-	display: none;
-} */
-
 @media screen and (max-width: 767px) {
 	.hero-container.home {
 		height: 100vh;
 	}
-	
-	/* .hero-background.mobile {
-		display: block;
-	}
-	
-	.hero-background.desktop {
-		display: none;
-	} */
 }

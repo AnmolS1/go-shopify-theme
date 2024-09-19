@@ -61,11 +61,18 @@ html.w-mod-touch * {
 
 .nav-link {
     color: #c5ae94;
-    letter-spacing: 2.5px;
-    padding-left: 20px;
-    padding-right: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
     text-decoration: none;
+}
+
+.nav-link.title-link {
+	font-size: 20px;
+}
+
+.nav-link.menu-link {
+	letter-spacing: 2.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 12px;
+	font-weight: 700;
 }

@@ -60,7 +60,9 @@ html.w-mod-touch * {
 	bottom: auto;
 	color: white;
 	font-size: 4rem;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .nav-link.title-link:hover {
@@ -90,17 +92,13 @@ html.w-mod-touch * {
 	}
 	
 	.nav-link.title-link {
-		font-size: 4rem;
+		font-size: 3.5rem;
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.nav-link-container {
 		display: none;
-	}
-	
-	.nav-link.title-link {
-		font-size: 4rem;
 	}
 	
 	.menu-open {
@@ -139,11 +137,6 @@ html.w-mod-touch * {
 }
 
 @media screen and (max-width: 479px) {
-	.nav-link.title-link {
-		width: 160px;
-		font-size: 4rem;
-	}
-	
 	.menu-open {
 		width: 25px;
 		height: 25px;

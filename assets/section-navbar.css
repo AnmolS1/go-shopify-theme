@@ -99,6 +99,10 @@ html.w-mod-touch * {
 		display: none;
 	}
 	
+	.nav-link.menu-link {
+		display: none;
+	}
+	
 	.nav-link.title-link {
 		font-size: 2.5rem;
 	}

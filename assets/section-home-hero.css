@@ -85,12 +85,29 @@ a {
 }
 
 .hero-background {
-	width: 100vw;
 	height: 100vh;
+	width: 100%;
 	background-image: url('https://cdn.shopify.com/s/files/1/0669/9728/9112/files/desktop_hero_bg.png?v=1726715075');
-	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: auto 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-background::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: inherit;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	filter: blur(20px);
+	margin: -30px;
 }
 
 .hero-background.mobile {

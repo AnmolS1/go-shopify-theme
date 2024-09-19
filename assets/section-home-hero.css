@@ -1,0 +1,128 @@
+/* .nav-container {
+  position: absolute;
+  height: 5.625rem;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: auto;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.nav-container.gradient {
+  background-image: linear-gradient(#000, rgba(0, 0, 0, 0));
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+	height: auto;
+	min-height: 100vh;
+  }
+} */
+
+a {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.hero-video-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero-video-container.home {
+    z-index: 1;
+    background-image: linear-gradient(#000, rgba(255, 255, 255, 0) 51%);
+    position: relative;
+}
+
+.hero-bottom-container {
+	position: absolute;
+	width: 100%;
+	height: 5.625rem;
+	left: 0%;
+	top: auto;
+	right: 0%;
+	bottom: 0%;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+	z-index: 100;
+}
+
+.footer-social-links {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.social-link {
+	color: white;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-family: "Fa brands 400", sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.social-link:hover, .social-link.header {
+	color: #c5ae94;
+}
+
+.scroll-down-container {
+	width: 2.125rem;
+	height: 2.125rem;
+	border: 2px solid #c5ae94;
+	border-radius: 20px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.w-inline-block {
+	max-width: 100%;
+	display: inline-block;
+}
+
+.scroll-down-container > img {
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+	.hero-video-container.home {
+		height: 100vh;
+	}
+	
+	.hero-bottom-container {
+		justify-content: center;
+	}
+	
+	.footer-social-links {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: flex;
+	}
+	
+	.footer-social-links.mobile-hide {
+		display: none;
+	}
+}

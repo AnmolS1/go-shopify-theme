@@ -1,0 +1,33 @@
+{{ 'section-home-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="hero-video-container home">
+	<div class="hero-bottom-container">
+		
+		<div class="footer-social-links mobile-hide">
+			<a href={{ settings.social_instagram_link }} target="_blank" class="social-link header"></a>
+			<a href="https://www.linkedin.com/in/anmolsaxena456/" target="_blank" class="social-link header"></a>
+		</div>
+		
+		<a href="#scroll-to" class="scroll-down-container w-inline-block">
+			{% # theme-check-disable %}
+			<img src="https://cdn.shopify.com/s/files/1/0669/9728/9112/files/arrow_down.svg?v=1726703278" loading="lazy" alt="" />
+			{% # theme-check-enable %}
+		</a>
+		
+	</div>
+</div>
+
+
+{% schema %}
+{
+	"name": "Home Hero",
+	"tag": "section",
+	"class": "section",
+	"presets": [
+		{
+			"name": "Home Hero",
+			"category": "Custom Sections"
+		}
+	]
+}
+{% endschema %}

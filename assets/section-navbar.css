@@ -166,7 +166,7 @@ html.w-mod-touch * {
 	}
 
 	.nav-link.mobile-menu.w--current {
-		color: grey;
+		color: #2d2e2e;
 	}
 
 	.menu-open {
